@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    android:background="@drawable/background01"
+    >
+
+    android:background="@drawable/background01"
+
+    <RelativeLayout
+        android:layout_width="400dp"
+        android:layout_height="380dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical">
+
+        <com.example.android.bluetoothchat.GameView
+            android:id="@+id/gameview1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true" />
+    </RelativeLayout>
+
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="127dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_weight="1"
+        android:background="@drawable/button01"
+        android:text="音樂關"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_pgv_return"
+        android:layout_width="127dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toEndOf="@+id/button4"
+        android:layout_weight="1"
+        android:background="@drawable/button01"
+        android:text="悔棋"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <Button
+        android:id="@+id/btn_pgv_again"
+        android:layout_width="127dp"
+        android:layout_height="50dp"
+        android:layout_alignTop="@+id/button4"
+        android:layout_toEndOf="@+id/btn_pgv_return"
+        android:layout_weight="1"
+        android:background="@drawable/button01"
+        android:text="重玩"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/edit_text_out"
+        android:layout_width="298dp"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/button4"
+        android:layout_alignParentStart="true"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/button_send"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:layout_above="@+id/button4"
+
+        android:layout_alignParentEnd="true"
+        android:text="@string/send"
+        android:textSize="18sp" />
+
+
+</RelativeLayout>
